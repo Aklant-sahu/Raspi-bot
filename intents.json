@@ -1,0 +1,175 @@
+{
+    "intents": [{
+            "tag": "greetings",
+            "patterns": ["hello", "hey", "hi", "Greetings", "Hola", "what's up?", "how you doin?", "how is it going?", "How do you do?", "Hello", "Nice to meet you.", "Could be better.", "It is a pleasure to meet you.", "Top of the morning to you!", "Hi", "How are you doing?", "I'm doing well. How are you?", "What about you?", "Greetings!", "nice to meet you.", "Top of the morning to you!,And the rest of the day to you.", "Fine and you?", "Im doing well.", "Whats up?"],
+            "responses": ["Hello!", "Hey!", "What can I do for you?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "tata", "cya", "See you later", "Good bye", "I am leaving", "Have a good day", "ciao", "chao", "ceya", "Talk to you later", "hasta la vista", "hmmm", "tata", "Gotta go", "I am leaving, gotta go", "See you sometime soon", "let us catch up later", "Time to go!", "Its getting late", "You are trash", "Time up!", "See you tomorrow"],
+            "responses": ["Goodbye!", "Sad to see you go :(", "Talk to you later !"]
+        },
+        {
+            "tag": "name",
+            "patterns": ["What is your name?", "Who are you", "What are you?", "Name please", "Please give me your name", "Identity", "identify yourself", "What is your human name?", "What does human call you?", "What does people call you?", "What name was given to you?", "Call you name yourself", "Call out your name"],
+            "responses": ["My name is Vesbot", "Vesbot", "I am Vesbot, nice to meet you", "Hear my name its Vesbot !"]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thank's a lot!",
+                "Thnx",
+                "Wow",
+                "Great!",
+                "Good!",
+                "That nice!",
+                "Amazing!"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure!",
+                "No problem!",
+               
+                "Glad to help!",
+                "No worries!",
+                "It was the least I could do!",
+                "If I had a cent for every time I appreciate you, I'd be a millionaire.",
+                "You can't put thanks in your pocket!"
+            ]
+        },
+        {
+            "tag": "alive",
+            "patterns": [
+                "Are you alive.",
+                "Do you breathe.",
+                "Can you run."
+            ],
+            "responses": [
+                "I'm in doubt about that",
+                "No, i don't think so I need to do all this"
+            ]
+        },
+
+        {
+            "tag": "clearing",
+            "patterns": [
+                "clear",
+                "clear screen",
+                "remove the timetable.","clrscr","cls"
+
+            ],
+            "responses": [
+                "clear"
+            ]
+        },
+        {
+            "tag": "hepl",
+            "patterns": [
+                "I am looking for help.",
+                "I need help.",
+                "Can you help me?",
+                "I am in trouble need a help.",
+                "I hope you right person who can help me?",
+                "Please help me.",
+                "Now I will need you help with something else.",
+                "I will need you help.",
+                "Are you able to help me.",
+                "PLease help me with something else."
+            ],
+            "responses": [
+                "Sure, how can in help you.",
+                "Tell me what do you looking for?",
+                "I will help you, just tell me how.",
+                "Ok, what is issue?",
+                "Now you need a help? Ok what you are looking for?",
+                "What is you problem?",
+                "Ok, you problem is my problem, if your are paying.",
+                "My help cost a lot.",
+                "Sure, but not for free."
+            ]
+        },
+        {
+            "tag": "funny",
+            "patterns": [
+                "Tell me a joke!",
+                "Can you be a bit funny",
+                "Tell me something funny!",
+                "Do you know a joke?",
+                "Any joke for me?"
+            ],
+            "responses": [
+                "A potato was interrogated by cops. After 3 hours of torture, it gave in and said 'Main batata hun, main batata hun...'",
+                "Last time when someone called me hot was when I was blocking a bengali girl's way in a metro.",
+                "IF YOU HAVE BLACK EYES THEN YOUR NAME IS RURU BECAUSE YE KALI KALI AANKHEIN? TU RURU. NOW APPLYING FOR NAME CHANGE IN PASSPORT.",
+                "What did Jaya say to Abhishek when they saw Amitabh coming home in a rickshaw, 'Rickshey mein toh woh tumhare baap lagte hai'",
+                "Why does khudkhushi in hindi mean suicide instead of masturbation?",
+                "jab bhi koi chickpea dekhun, mera dil deewana bole chole chole chole, chole chole chole",
+                "'Mehendi laga ke rakhna, dowry saja ke rakhna'- Indians before wedding",
+                "Never say 'give me five' to a snake. Woh tumhe dus dega.",
+                "Life's like a bird. It's pretty cute until it poops on your head.",
+                "I'm skeptical of anyone who tells me they do yoga every day. That's a bit of a stretch.",
+                "I don't have a girlfriend. But I know a girl that would get really mad if she heard me say that.",
+                "A computer once beat me at chess. But it was no match for me at kickboxing.",
+                "I have a lot of growing up to do. I realized that the other day inside my fort.",
+                "Give a man a fish and you feed him for a day. But teach a man to fish, and you saved yourself a fish, haven't you?",
+                "We have enough youth. How about a Fountain of Smart?",
+                "A clear conscience is usually the sign of a bad memory.",
+                "My therapist says I have a preoccupation with vengeance. We'll see about that.",
+                "My first experience with culture shock? Probably when I peed on an electric fence.",
+                "Worrying works! More than 90 percent of the things I worry about never happen.",
+                "I don't have an attitude problem. You have a perception problem.",
+                "Money can't buy you happiness? Well, check this out, I bought myself a Happy Meal!",
+                "The easiest time to add insult to injury is when you're signing somebody's cast.",
+                "The problem isn't that obesity runs in your family. The problem is no one runs in your family.",
+                "You don't need a parachute to go skydiving. You need a parachute to go skydiving twice.",
+                "Letting go of a loved one can be hard. But sometimes, it's the only way to survive a rock climbing catastrophe.",
+                "A positive attitude may not solve all your problems. But it will annoy enough people to make it worth the effort.",
+                "Always borrow money from a pessimist. He won't expect it back."
+            ]
+        },
+        {
+            "tag": "HOD",
+            "patterns": ["Who is the head of department?", "Head of department", "Hod of the department", "Name of hod", "Who is Mrs. Kavita Tewari?"],
+            "responses": ["Mrs. Kavita Tewari is the hod of etrx department"]
+        },
+        {
+            "tag": "Deputy hod",
+            "patterns": ["Who is the Deputy head of department?", "Deputy Head of department", "Deputy Hod of the department", "Name of deputy hod"],
+            "responses": ["Mrs. Naveeta Kant is the deputy hod of etrx department"]
+        },
+        {
+            "tag": "List of Prof",
+            "patterns": ["who is sitting in lab number 201", "who is sitting in lab number 203", "lab no 202", "who is sitting in lab no 203","who is sits in lab no 203", "Display every professors in the department","lab number 203"],
+            "responses": ["PROF_CSV"]
+        },
+        {
+            "tag": "Professors Room",
+            "patterns": ["Mrs.Kavita Tewari is in which class?",
+                "Mrs.Naveeta Kant is in which class?",
+                "Dr.T.Rajani Mangala is in which class?",
+                "Dr.Abhay Kshirsagar is in which class?",
+                "Dr.Asawari Dudwadkar is in which class?",
+                "Mrs.Jaymala Adsul is in which class?",
+                "Mr.Abhijit Shete is in which class?",
+                "Dr.Parmeshwar Birajadar is in which class?",
+                "Mr.Yogesh Pandit is in which class?",
+                "Mrs.Sarika Kuhikar is in which class?",
+                "Mrs.Rakhi Jadhav is in which class?",
+                "Mrs.Gauri Sahoo is in which class?",
+                "Mr.Vijay Joshi is in which class?",
+                "Mrs.Amrita Jhaveri is in which class?",
+                "Mr.Abhishek Chaudhari is in which class?",
+                "Mrs.Dipti Karani is in which class?",
+                "Mrs.Anushree Prabhu is in which class?"
+            ],
+            "responses": ["Room_func"]
+
+        }
+
+
+    ]
+}
