@@ -1,4 +1,3 @@
-from flask_cors import cross_origin
 from flask import Flask, render_template, request
 from flask_ngrok import run_with_ngrok
 from copyreg import pickle
@@ -20,12 +19,14 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.models import load_model
 from tensorflow.keras.layers import Dense,Activation,Dropout
 from tensorflow.keras.optimizers import SGD
-import pyttsx3
-lemmatizer = WordNetLemmatizer()
+import pyttsx3  
+
 engine = pyttsx3.init()  
 voices = engine. getProperty('voices')
 engine.setProperty("rate", 140)
 engine.setProperty('voice', voices[1].id)  
+
+lemmatizer = WordNetLemmatizer()
 df=pd.read_csv("prof1.csv")
 
 app = Flask(__name__)
@@ -127,15 +128,14 @@ def chatbot_response():
     msg = request.form["msg"]
     msg_lst=word_tokenize(msg)
     msg_lst = [i.lower() for i in msg_lst]
-    # engine.say(msg)   
-    # engine.runAndWait()
     
    
    
     if "Timetable".lower() in msg_lst:
         print("in timetable")
         res1=timetable(get_div(msg_lst,msg))
-        print(res1)
+        # engine.say("Timetable is as follows")   
+        # engine.runAndWait()
         return res1
     
        
@@ -143,25 +143,33 @@ def chatbot_response():
         
         ints = predict_class(msg)
         res = get_response(ints, intents)
+        
         print(res)
         if res=="Room_func":
 
             room,flag = room_func(msg,df)
             if flag==0:
                 message=f"Oops !! This professor name is not present in this department.\n Below is the list of Professors {[i for i in list_of_prof]}"
-                
+                # engine.say(message)   
+                # engine.runAndWait()
                 return message
            
             else:
+                # engine.say(room)   
+                # engine.runAndWait()
 
                 return room
         elif res == "PROF_CSV":
             ans=PROF_CSV(msg,df)
+            # engine.say(ans)   
+            # engine.runAndWait()
             return ans
-        elif res=="clearing":
+        elif res=="clear":
             return "static/images/white.jpg"
 
         else:
+            # engine.say(res)   
+            # engine.runAndWait()
 
             return res
 
